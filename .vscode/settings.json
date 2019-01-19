@@ -1,1 +1,26 @@
-{}
+{
+  "python.venvFolders": [".venv", "envs", ".pyenv", ".direnv"],
+  "python.venvPath": "${workspaceFolder}",
+  "python.terminal.activateEnvironment": true,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.autoComplete.addBrackets": true,
+  // "python.autoComplete.preloadModules": [],
+  "python.autoComplete.extraPaths": ["${workspaceFolder}/.venv/lib/python3.7/site-packages"],
+  // "python.linting.pylintArgs": [
+  //   "--ignored-modules=numpy,cv2,matplotlib",
+  //   "--ignored-classes=numpy,cv2,matplotlib",
+  //   "--extension-pkg-whitelist=numpy,cv2,matplotlib"
+  // ],
+  "[cpp]": {
+    "editor.quickSuggestions": true
+  },
+  "[python]": {
+    "editor.quickSuggestions": true
+  },
+  // Whether to lint Python files.
+  "python.linting.enabled": true,
+  // Whether to lint Python files using pylint.
+  "python.linting.pylintEnabled": true
+  // "python.analysis.typeshedPaths": ["${workspaceFolder}/.venv/lib/python3.7/site-packages"],
+  // "python.autoComplete.typeshedPaths": ["${workspaceFolder}/.venv/lib/python3.7/site-packages"]
+}
