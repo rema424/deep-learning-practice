@@ -1,0 +1,19 @@
+version: '3'
+
+volumes:
+  deep-learning-practice-volume:
+    external: true
+
+services:
+  app:
+    build: .
+    working_dir: /code
+    command: bash --login
+    volumes:
+      - .:/code
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - 8080:8080
+    tty: true
+    privileged: true
