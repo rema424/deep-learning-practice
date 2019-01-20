@@ -1,16 +1,24 @@
 {
   "python.venvFolders": [".venv", "envs", ".pyenv", ".direnv"],
-  "python.venvPath": "${workspaceFolder}",
+  "python.venvPath": "${workspaceFolder}/.venv",
   "python.terminal.activateEnvironment": true,
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-  "python.autoComplete.addBrackets": true,
+  "python.pythonPath": "/Users/RM/.pyenv/versions/anaconda3-5.3.1/bin/python",
+  // "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  // "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
   // "python.autoComplete.preloadModules": [],
-  "python.autoComplete.extraPaths": ["${workspaceFolder}/.venv/lib/python3.7/site-packages"],
+  "python.autoComplete.extraPaths": ["${workspaceFolder}/.venv/lib/python3.7/site-packages/numpy"],
   // "python.linting.pylintArgs": [
   //   "--ignored-modules=numpy,cv2,matplotlib",
   //   "--ignored-classes=numpy,cv2,matplotlib",
   //   "--extension-pkg-whitelist=numpy,cv2,matplotlib"
   // ],
+  "python.autoComplete.addBrackets": true,
+  "python.disableInstallationCheck": true,
+  "python.globalModuleInstallation": true,
+  "python.linting.banditEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pep8Enabled": true,
   "[cpp]": {
     "editor.quickSuggestions": true
   },
