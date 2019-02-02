@@ -11,8 +11,11 @@ services:
     command: bash --login
     volumes:
       - .:/code
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw # GUI 共有用
     environment:
       TZ: Asia/Tokyo
+      DISPLAY: host.docker.internal:0.0
+      QT_X11_NO_MITSHM: 1
     ports:
       - 8080:8080
     tty: true

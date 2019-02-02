@@ -1,12 +1,16 @@
 # %%
 import numpy as np
 import matplotlib.pyplot as plt
+
 # from matplotlib.image import imread
 
 # データの生成
 x = np.arange(0, 6, 0.1)
 y1 = np.sin(x)
 y2 = np.cos(x)
+
+# plt.p
+
 
 # グラフの描画
 plt.plot(x, y1, label="sin")

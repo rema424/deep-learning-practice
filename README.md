@@ -58,7 +58,7 @@ $ exec $SHELL -l
 FROM python:3.7.2
 
 ENV PYTHONUNBUFFERED 1
-ENV PIPENV_VENV_IN_PROJECT true
+ENV PIPENV_VENV_IN_PROJECT 1
 
 RUN mkdir /code
 WORKDIR /code
@@ -102,3 +102,29 @@ syncs:
   deep-learning-practice-volume:
     src: .
 ```
+
+```bash
+brew update
+brew install pipenv
+rm '/usr/local/bin/pipenv'
+brew uninstall pipenv
+brew install pipenv
+echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.bash_profile
+echo '[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion' >> ~/.bash_profile
+```
+
+```
+- aaa
+    - aaaaa
+        -
+    - cccccccc
+    - dddddddd
+  - bbbbbbbbbb
+  - cccccccccccc
+    - dddddddddddddddd
+    - bbbbbbbbbbbbbbb
+```
+
+- aaa
+    - bbb
+    - ccccc
